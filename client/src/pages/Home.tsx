@@ -82,7 +82,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-serif font-bold">Precision Edge</h3>
               <p className="text-muted-foreground leading-relaxed">
-                We use professional-grade whetstones and equipment to restore a razor-sharp, durable edge to your cherished tools.
+                We use the Work Sharp Ken Onion Blade Grinding system to restore a professional, durable edge to your cherished tools.
               </p>
             </motion.div>
 

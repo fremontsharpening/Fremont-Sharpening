@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button";
 export default function FAQ() {
   const faqs = [
     {
-      question: "How does the mobile service work?",
-      answer: "We come directly to your home in our fully equipped mobile workshop. We'll park in your driveway or on the street, collect your items, sharpen them on-site, and return them to you immediately. No need to be without your tools for days!"
+      question: "What equipment do you use?",
+      answer: "We use the Work Sharp Ken Onion Blade Grinding system. This professional-grade equipment allows for precise, repeatable results and creates a superior convex edge that stays sharp longer than traditional grinds."
     },
     {
       question: "How long does it take?",

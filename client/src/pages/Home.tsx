@@ -302,7 +302,7 @@ export default function Home() {
       {/* CTA */}
       <section className="py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8">Ready to rediscover your knives?</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8">Ready for a better edge?</h2>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-10">
             Book your mobile appointment today and experience the joy of truly sharp tools.
           </p>

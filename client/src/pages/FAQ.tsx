@@ -34,7 +34,7 @@ export default function FAQ() {
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept credit cards, debit cards, cash, and digital payments like Venmo or Apple Pay upon completion of the service."
+      answer: "Upon completion, we'll send a mobile invoice directly to your phone. You can pay instantly using a credit card, Apple Pay, or Google Pay. We also accept cash, Zelle, and Venmo."
     },
     {
       question: "Do you sharpen serrated knives?",

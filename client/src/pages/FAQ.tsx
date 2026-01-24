@@ -22,11 +22,11 @@ export default function FAQ() {
     },
     {
       question: "What is your service area?",
-      answer: "We primarily serve the Fremont area and surrounding local neighborhoods. If you're unsure if you're in our range, please try booking an appointment—the system will let you know, or feel free to contact us."
+      answer: "We primarily serve Fremont, Union City, and Newark. We can travel outside these areas for a small additional travel fee—please inquire regardless of your location and we'll do our best to accommodate you!"
     },
     {
       question: "How often should I sharpen my knives?",
-      answer: "For regular home cooks, we recommend professional sharpening every 6-12 months. If you cook daily or notice your knife slipping on tomato skins or onion layers, it's time for a touch-up."
+      answer: "For regular home cooks, we recommend professional sharpening every 3-6 months. If you cook daily or notice your knife slipping on tomato skins or onion layers, it's time for a touch-up."
     },
     {
       question: "Do you repair damaged knives?",

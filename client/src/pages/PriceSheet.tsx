@@ -64,7 +64,7 @@ export default function PriceSheet() {
         <div className="mt-16 p-8 bg-secondary/20 rounded-2xl border border-secondary text-center space-y-6">
           <h3 className="text-2xl font-serif font-bold">Ready to book?</h3>
           <p className="text-muted-foreground">
-            Minimum service visit is usually 3-4 items, but feel free to combine with neighbors!
+            Minimum service visit is 6 items or $54. Feel free to combine with neighbors!
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full">
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer">

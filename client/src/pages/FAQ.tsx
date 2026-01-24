@@ -13,6 +13,10 @@ export default function FAQ() {
       answer: "We use the Work Sharp Ken Onion Blade Grinding system. This professional-grade equipment allows for precise, repeatable results and creates a superior convex edge that stays sharp longer than traditional grinds."
     },
     {
+      question: "Is there a minimum service charge?",
+      answer: "Yes, our minimum for mobile sharpening is 6 items or $54. If you have fewer items, we encourage you to combine your sharpening with a neighbor or friend at the same location!"
+    },
+    {
       question: "How long does it take?",
       answer: "Most appointments take between 45 to 60 minutes, depending on the number of items and their condition. We work efficiently so you can get back to cooking."
     },

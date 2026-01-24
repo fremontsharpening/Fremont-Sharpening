@@ -1,0 +1,48 @@
+Create a professional website for "Fremont Sharpening," a mobile knife and tool sharpening service targeting wealthy home cooks in the local area. The website should convey a professional, local craftsman aesthetic that builds trust and expertise.
+Business Overview:
+Fremont Sharpening is a mobile sharpening service that comes directly to customers' homes to sharpen their knives and tools. The service is convenient, professional, and caters to home cooks who value quality kitchen tools.
+Website Goals:
+
+Generate bookings through a prominent link to the booking site
+Provide clear information about services offered
+Establish credibility and professionalism
+Make it easy for customers to understand pricing and process
+
+Required Pages:
+
+Home/Info Page - Overview of the service, benefits of mobile sharpening, professional credentials, service area
+Price Sheet - Clear pricing for different items (see pricing details below)
+FAQ - Common questions about the sharpening process, scheduling, payment, turnaround time
+Booking Integration - Highly visible and easy-to-find link/button to https://fremontsharpening.youcanbook.me/ throughout the site
+
+Pricing Structure:
+
+Kitchen Knives: $9
+Cleavers/Large Knives (10+ in): $12
+Scissors: $9
+Serrated Knives: $9
+Machetes: $16
+Axes/Hatchets: $16
+Pruning Shears: $12
+Kitchen Tools (Pizza Cutters, Food Processor Blades, Peelers, etc.): $12
+Large Loppers/Lawnmower Blades: $16 (Note: Free removal on mower blades!)
+
+Design Style:
+
+Professional and trustworthy aesthetic
+Local craftsman/artisan feel
+Clean, uncluttered layout
+Imagery suggesting precision, quality, and care
+Warm but professional color palette (consider earth tones, metallics, or classic combinations)
+
+Key Features:
+
+Mobile-responsive design (must work perfectly on phones and tablets)
+Prominent "Book Now" or "Schedule Service" call-to-action buttons on every page linking to the booking site
+Before/after imagery opportunities
+Trust signals (experience, certifications, service area, testimonials if available)
+Clear contact information
+Easy-to-read pricing table/grid on the pricing page
+
+Tone:
+Professional yet approachable. Emphasize convenience, expertise, and quality results. Appeal to discerning home cooks who invest in quality kitchen tools and want them maintained properly.

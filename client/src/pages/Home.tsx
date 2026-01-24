@@ -82,7 +82,7 @@ export default function Home() {
               Restore the Edge <br/> to Your Kitchen
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed">
-              Professional craftsmanship delivered to your doorstep. We service Fremont, Union City, and Newark for discerning home cooks.
+              Experience the precision of artisan sharpening delivered straight to your door. We restore the edge for home cooks in Fremont, Union City, and Newark.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 rounded-full shadow-lg shadow-black/20">

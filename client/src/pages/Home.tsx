@@ -111,9 +111,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="w-full md:w-1/2">
               <img 
-                src="/tools-display.png" 
-                alt="Sharpened tools" 
-                className="rounded-lg shadow-xl w-full object-cover h-[500px]"
+                src="/artisan-thomas.png" 
+                alt="Thomas sharpening a knife" 
+                className="rounded-lg shadow-xl w-full object-cover h-[600px] object-top"
               />
             </div>
             <div className="w-full md:w-1/2 space-y-6">

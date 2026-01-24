@@ -1,10 +1,58 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Truck, ShieldCheck, Sparkles, Clock } from "lucide-react";
+import { ArrowRight, Truck, ShieldCheck, Sparkles, Clock, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const bookingUrl = "https://fremontsharpening.youcanbook.me/";
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const testimonials = [
+    {
+      name: "Nelson Agregado",
+      text: "Thomas did a great job sharpening several of my knives... showed up on time and did the job within minutes and I didn't even have to leave the house!",
+      tag: "Local Guide"
+    },
+    {
+      name: "Maxwell Casebolt",
+      text: "Scheduled an appointment for the next day but Thomas managed to squeeze me in same-day. My scissors are now beautifully sharp and ready for use on my next project!",
+      tag: "Customer"
+    },
+    {
+      name: "S T",
+      text: "I didn't realize how dull my knives were until I got them back from Fremont Sharpening. It's a night and day difference. Professional, timely and friendly service.",
+      tag: "Customer"
+    },
+    {
+      name: "Mark Willey",
+      text: "I've had them come sharpen knives onsite several times. Quick work and excellent craftsmanship always.",
+      tag: "Customer"
+    },
+    {
+      name: "Jonathan Peterson",
+      text: "Absolutely awesome! As easy as could be to set up appointment... 5 knives brought back to life. Thomas was professional and had a cool apron.",
+      tag: "Customer"
+    },
+    {
+      name: "Ashley Perkins Lawson",
+      text: "Thomas did a phenomenal job... Our knives are now sharper than they've ever been! We will be using Thomas' services again!",
+      tag: "Customer"
+    }
+  ];
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  useEffect(() => {
+    const timer = setInterval(nextTestimonial, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -171,57 +219,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-secondary/10">
+      {/* Testimonials Carousel */}
+      <section className="py-24 bg-secondary/10 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">What Our Customers Say</h2>
             <div className="flex justify-center gap-1 text-primary">
               {[...Array(5)].map((_, i) => (
-                <Sparkles key={i} className="w-5 h-5 fill-current" />
+                <Star key={i} className="w-5 h-5 fill-current" />
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Nelson Agregado",
-                text: "Thomas did a great job sharpening several of my knives... showed up on time and did the job within minutes and I didn't even have to leave the house!",
-                tag: "Local Guide"
-              },
-              {
-                name: "Jonathan Peterson",
-                text: "Absolutely awesome! As easy as could be to set up appointment... 5 knives brought back to life. Thomas was professional and had a cool apron.",
-                tag: "Customer"
-              },
-              {
-                name: "Ashley Perkins Lawson",
-                text: "Thomas did a phenomenal job... Our knives are now sharper than they've ever been! We will be using Thomas' services again!",
-                tag: "Customer"
-              }
-            ].map((testimonial, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="bg-card p-8 rounded-2xl border shadow-sm relative"
+          
+          <div className="relative max-w-4xl mx-auto">
+            <div className="flex items-center justify-between absolute inset-y-0 -inset-x-4 md:-inset-x-12 z-10 pointer-events-none">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={prevTestimonial}
+                className="pointer-events-auto rounded-full bg-background/50 backdrop-blur-sm shadow-sm hover:bg-background"
               >
-                <p className="text-muted-foreground italic mb-6 leading-relaxed">
-                  "{testimonial.text}"
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">
-                    {testimonial.name[0]}
+                <ChevronLeft className="h-6 w-6" />
+              </Button>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={nextTestimonial}
+                className="pointer-events-auto rounded-full bg-background/50 backdrop-blur-sm shadow-sm hover:bg-background"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </Button>
+            </div>
+
+            <div className="min-h-[300px] flex items-center justify-center">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentTestimonial}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="bg-card p-10 md:p-16 rounded-3xl border shadow-lg text-center relative w-full"
+                >
+                  <div className="absolute top-4 left-1/2 -translate-x-1/2 flex gap-1 text-primary/40">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-current" />
+                    ))}
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-sm">{testimonial.name}</h4>
-                    <span className="text-xs text-muted-foreground">{testimonial.tag}</span>
+                  
+                  <p className="text-xl md:text-2xl text-foreground italic mb-8 leading-relaxed font-serif">
+                    "{testimonials[currentTestimonial].text}"
+                  </p>
+                  
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="w-14 h-14 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+                      {testimonials[currentTestimonial].name[0]}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-lg">{testimonials[currentTestimonial].name}</h4>
+                      <span className="text-sm text-primary font-medium uppercase tracking-wider">{testimonials[currentTestimonial].tag}</span>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            <div className="flex justify-center gap-2 mt-8">
+              {testimonials.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentTestimonial(i)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    i === currentTestimonial ? "bg-primary w-6" : "bg-primary/20"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/">
             <a className="flex items-center gap-2 font-serif text-xl font-bold tracking-tight text-primary hover:opacity-90 transition-opacity">
-              <Scissors className="h-6 w-6" />
+              <img src="/logo-fremont.png" alt="Fremont Sharpening Logo" className="h-12 w-12 object-contain bg-white rounded-full p-0.5" />
               <span>Fremont Sharpening</span>
             </a>
           </Link>

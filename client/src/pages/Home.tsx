@@ -161,7 +161,7 @@ export default function Home() {
               <img 
                 src="/artisan-thomas.png" 
                 alt="Thomas sharpening a knife" 
-                className="rounded-lg shadow-xl w-full object-cover h-[600px] object-top"
+                className="rounded-lg shadow-xl w-full object-cover h-[500px] md:h-[600px] object-[50%_20%]"
               />
             </div>
             <div className="w-full md:w-1/2 space-y-6">

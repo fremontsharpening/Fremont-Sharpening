@@ -170,8 +170,8 @@ export default function Home() {
                 Honoring the Craft of Cooking
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Fremont Sharpening was founded on a simple belief: good cooking starts with good tools. 
-                A dull knife isn't just frustrating—it's dangerous and disrespectful to your ingredients.
+                Fremont Sharpening was founded on a simple belief: good cooking starts with sharp tools. 
+                A dull knife is frustrating to use, and honestly, it’s just not safe.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 We bring traditional craftsmanship to the modern home. Whether it's your grandmother's fabric scissors 

@@ -14,7 +14,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{ 
-            backgroundImage: 'url("/hero-sharpening.png")',
+            backgroundImage: 'url("/hero-sharpening-custom.png")',
           }}
         >
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />

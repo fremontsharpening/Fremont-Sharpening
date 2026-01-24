@@ -171,6 +171,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="py-24 bg-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">What Our Customers Say</h2>
+            <div className="flex justify-center gap-1 text-primary">
+              {[...Array(5)].map((_, i) => (
+                <Sparkles key={i} className="w-5 h-5 fill-current" />
+              ))}
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Nelson Agregado",
+                text: "Thomas did a great job sharpening several of my knives... showed up on time and did the job within minutes and I didn't even have to leave the house!",
+                tag: "Local Guide"
+              },
+              {
+                name: "Jonathan Peterson",
+                text: "Absolutely awesome! As easy as could be to set up appointment... 5 knives brought back to life. Thomas was professional and had a cool apron.",
+                tag: "Customer"
+              },
+              {
+                name: "Ashley Perkins Lawson",
+                text: "Thomas did a phenomenal job... Our knives are now sharper than they've ever been! We will be using Thomas' services again!",
+                tag: "Customer"
+              }
+            ].map((testimonial, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-card p-8 rounded-2xl border shadow-sm relative"
+              >
+                <p className="text-muted-foreground italic mb-6 leading-relaxed">
+                  "{testimonial.text}"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">
+                    {testimonial.name[0]}
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-sm">{testimonial.name}</h4>
+                    <span className="text-xs text-muted-foreground">{testimonial.tag}</span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">

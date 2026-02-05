@@ -39,6 +39,10 @@ export default function FAQ() {
     {
       question: "Do you sharpen serrated knives?",
       answer: "Absolutely. We have specialized equipment to sharpen each scallop of a serrated blade individually, restoring its slicing power without ruining the teeth."
+    },
+    {
+      question: "Do you sharpen grooming or hair shears?",
+      answer: "No, we do not sharpen grooming or hair shears. These require specialized equipment and calibration that falls outside of our service offerings."
     }
   ];
 
@@ -46,7 +50,6 @@ export default function FAQ() {
     <div className="min-h-screen bg-background py-16 md:py-24">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-16 space-y-4">
-          <span className="text-primary font-medium uppercase tracking-wider text-sm">Common Questions</span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground">Frequently Asked Questions</h1>
           <p className="text-lg text-muted-foreground">
             Everything you need to know about our mobile sharpening service.
@@ -70,7 +73,7 @@ export default function FAQ() {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-4">Still have questions?</p>
-          <a href="mailto:hello@fremontsharpening.com" className="text-primary font-medium hover:underline text-lg">
+          <a href="mailto:fremontsharpening@gmail.com" className="text-primary font-medium hover:underline text-lg">
             Contact us directly
           </a>
         </div>

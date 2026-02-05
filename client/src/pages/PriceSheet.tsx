@@ -66,6 +66,9 @@ export default function PriceSheet() {
           <p className="text-muted-foreground">
             Minimum service visit is 6 items or $54. Feel free to combine with neighbors!
           </p>
+          <p className="text-sm text-muted-foreground italic">
+            Please note: We do not sharpen grooming or hair shears.
+          </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full">
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
               Schedule Appointment

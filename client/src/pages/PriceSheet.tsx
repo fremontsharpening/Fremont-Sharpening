@@ -13,7 +13,7 @@ export default function PriceSheet() {
       { name: "Kitchen Tools", price: "$12.00", desc: "Pizza cutters, food processor blades, peelers, etc." },
     ]},
     { category: "Household & Garden", items: [
-      { name: "Scissors", price: "$9.00", desc: "Fabric, kitchen, and household scissors." },
+      { name: "Scissors", price: "$9.00", desc: "Fabric, kitchen, and household scissors. We do not sharpen grooming or hair shears." },
       { name: "Pruning Shears", price: "$12.00", desc: "Hand pruners and garden shears." },
       { name: "Machetes", price: "$16.00", desc: "Large brush clearing tools." },
       { name: "Axes / Hatchets", price: "$16.00", desc: "Hand axes and splitting mauls." },
@@ -65,9 +65,6 @@ export default function PriceSheet() {
           <h3 className="text-2xl font-serif font-bold">Ready to book?</h3>
           <p className="text-muted-foreground">
             Minimum service visit is 6 items or $54. Feel free to combine with neighbors!
-          </p>
-          <p className="text-sm text-muted-foreground italic">
-            Please note: We do not sharpen grooming or hair shears.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-full">
             <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
